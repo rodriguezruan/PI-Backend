@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import Blueprint, request, jsonify
 from werkzeug.security import generate_password_hash, check_password_hash
-from app import app
+from app import app, users_collection
 from pymongo import MongoClient
 
 #cadastro_bp = Blueprint('cadastro', __name__)
