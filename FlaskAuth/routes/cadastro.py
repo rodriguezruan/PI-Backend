@@ -6,7 +6,7 @@ from pymongo import MongoClient
 
 #cadastro_bp = Blueprint('cadastro', __name__)
 
-@cadastro_mongo.route('/cadastro', methods=['POST'])
+@app.route('/cadastro', methods=['POST'])
 def cadastrar_usuario():
     data = request.get_json()
     email = data['email']
